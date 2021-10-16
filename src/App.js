@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <Helmet>
-        <title>Travel Companion</title>
+        <title>Cryptoverse</title>
         <meta property='og:title' content='CryptoVerse'/>
         <meta property='og:image' content='https://github.com/Deadflight/cryptoverse-react-app/blob/main/public/cryptoverse.PNG' />
         <meta property='og:description' content='Crypto app using React, API Rest, Redux'/>
