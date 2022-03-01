@@ -12,9 +12,8 @@ const { Panel } = Collapse;
 const Exchanges = () => {
   const { data, isFetching } = useGetExchangesQuery();
   const exchangesList = data?.data?.exchanges;
-
+  const test =useGetExchangesQuery()
   if (isFetching) return <Loader />;
-
   return (
     <>
       <Row>
