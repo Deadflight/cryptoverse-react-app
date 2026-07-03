@@ -10,5 +10,11 @@ export default configureStore({
   reducer: {
     [cryptoApi.reducerPath]: cryptoApi.reducer,
     [cryptoNewsApi.reducerPath]: cryptoNewsApi.reducer
-  }
+  },
+
+  // Agregamos los middlewares de ambas APIs aquí abajo:
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware()
+      .concat(cryptoApi.middleware)
+      .concat(cryptoNewsApi.middleware),
 });
